@@ -153,6 +153,7 @@ CGImagePropertyOrientation imagePropertyOrientationForUIImageOrientation(UIImage
     view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     view.translatesAutoresizingMaskIntoConstraints = YES;
     view.contentMode = UIViewContentModeScaleAspectFill;
+    view.transform = CGAffineTransformMakeScale(1.0f, 0.75f);
     view.image = [_glkView snapshot] ;
     self.transitionSnapsot = view;
     
@@ -220,6 +221,7 @@ CGImagePropertyOrientation imagePropertyOrientationForUIImageOrientation(UIImage
     view.translatesAutoresizingMaskIntoConstraints = YES;
     view.context = self.context;
     view.contentScaleFactor = 1.0f;
+    view.transform = CGAffineTransformMakeScale(1.0f, 0.75f);
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     [self insertSubview:view atIndex:0];
     
@@ -563,7 +565,7 @@ CGImagePropertyOrientation imagePropertyOrientationForUIImageOrientation(UIImage
 
 - (UIColor*)overlayColor {
     if (!_overlayColor) {
-        _overlayColor = [UIColor redColor];
+        _overlayColor = [UIColor colorWithRed:0.0 green:0.58 blue:0.84 alpha:1.0];
     }
     return _overlayColor;
 }
@@ -649,7 +651,7 @@ CGImagePropertyOrientation imagePropertyOrientationForUIImageOrientation(UIImage
             image = [image drawHighlightOverlayWithcolor:[self.overlayColor colorWithAlphaComponent:alpha] CIRectangleFeature:_borderDetectLastRectangleFeature];
             
             // Draw Center
-            if(self.enableDrawCenter) image = [image drawCenterOverlayWithColor:[UIColor redColor] point:_borderDetectLastRectangleFeature.centroid];
+            if(self.enableDrawCenter) image = [image drawCenterOverlayWithColor:[UIColor colorWithRed:0.0 green:0.58 blue:0.84 alpha:1.0] point:_borderDetectLastRectangleFeature.centroid];
             
             // Draw Overlay Focus
             CGFloat amplitude = _borderDetectLastRectangleFeature.bounds.size.width / 4.0f;

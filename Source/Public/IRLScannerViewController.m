@@ -60,7 +60,7 @@
     cameraView.detectorType = detector;
     cameraView.camera_PrivateDelegate = delegate;
     cameraView.showControls = YES;
-    cameraView.detectionOverlayColor = [UIColor redColor];
+    cameraView.detectionOverlayColor = [UIColor colorWithRed:0.0 green:0.58 blue:0.84 alpha:1.0];
     return cameraView;
 }
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8276EC44204072980059427F /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8276EC42204072980059427F /* UIButton+Extensions.h */; };
+		8276EC44204072980059427F /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8276EC42204072980059427F /* UIButton+Extensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8276EC45204072980059427F /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8276EC43204072980059427F /* UIButton+Extensions.m */; };
 		8287E6FA1FD01398005B4668 /* IRLDocumentScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 8287E6EF1FD01398005B4668 /* IRLDocumentScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8287E6FB1FD01398005B4668 /* IRLScannerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8287E6F11FD01398005B4668 /* IRLScannerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,9 +129,9 @@
 				8287E70A1FD13F62005B4668 /* IRLDocumentScannerFramework.h in Headers */,
 				8287E6FA1FD01398005B4668 /* IRLDocumentScanner.h in Headers */,
 				8287E6FB1FD01398005B4668 /* IRLScannerViewController.h in Headers */,
-				8276EC44204072980059427F /* UIButton+Extensions.h in Headers */,
 				8287E6FD1FD01398005B4668 /* CIRectangleFeature+Utilities.h in Headers */,
 				8287E6FE1FD01398005B4668 /* IRLCameraView.h in Headers */,
+				8276EC44204072980059427F /* UIButton+Extensions.h in Headers */,
 				8287E7011FD01398005B4668 /* CIImage+Utilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +344,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.irlmobile.IRLDocumentScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -368,6 +369,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.irlmobile.IRLDocumentScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
