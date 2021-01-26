@@ -541,13 +541,13 @@ CGImagePropertyOrientation imagePropertyOrientationForUIImageOrientation(UIImage
                       detectorPerf = [CIDetector detectorOfType:CIDetectorTypeRectangle context:nil options:@{
                                                                                                               CIDetectorAccuracy        : CIDetectorAccuracyLow,
                                                                                                               CIDetectorTracking        : @YES,
-                                                                                                              CIDetectorMinFeatureSize  : @.5f
+                                                                                                              CIDetectorMinFeatureSize  : @.15f
                                                                                                               }];
                       
                       detectorHigh = [CIDetector detectorOfType:CIDetectorTypeRectangle context:nil options:@{
                                                                                                               CIDetectorAccuracy        : CIDetectorAccuracyHigh,
                                                                                                               CIDetectorTracking        : @YES,
-                                                                                                              CIDetectorMinFeatureSize  : @.5f
+                                                                                                              CIDetectorMinFeatureSize  : @.15f
                                                                                                               
                                                                                                               }];
                   });
